@@ -9,14 +9,22 @@
     
 <body>
     
-    <div class ="form-login">
-        <h1>Inicio Sesion</h1>
-    <div class = "email-box">
-     <input type="text" placeholder="Email">
-    </div>
-    <div class = "password-box">
-        <input type="password" placeholder="Password">
-    </div>
-    <button class = "entrar-btn">Entrar</button>
+    <form name="formulario-login" id = "login">
+        
+
+        <div class ="form-login">
+            <h1>Inicio Sesion</h1>
+            <p>Ingrese sus datos:</p>
+        <div class = "email-box">
+        <input type="text" required id="email" placeholder="Email">
+        </div>
+        <div class = "password-box">
+            <input type="password" required id="password" placeholder="Password">
+        </div>
+        <button class = "entrar-btn" type="submit">Entrar</button>
+        <button class = "registrar-btn">Registrarse</button>
+        
+    </form>
 </body>
+<script src="js/validaciones.js"></script>
 </html>
