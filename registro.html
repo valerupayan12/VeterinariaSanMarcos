@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres en español -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista para dispositivos móviles -->
+    <title>Veterinaria San Marcos - Registro de Mascotas</title> <!-- Título visible en la pestaña del navegador -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Vincula con la hoja de estilos externa -->
+</head>
+<body>
+    <!-- BARRA SUPERIOR (TOPBAR) -->
+    <div class="topbar"> <!-- Contenedor de la barra informativa superior -->
+        <div>
+            <div class="woostify-container"> <!-- Alineador interno del contenido -->
+                <div class="topbar-item topbar-left"></div> <!-- Espacio izquierdo reservado -->
+                <div class="topbar-item topbar-center">Atención de Urgencias 24/7 en San Marcos</div> <!-- Mensaje central de aviso urgente -->
+                <div class="topbar-item topbar-right"></div> <!-- Espacio derecho reservado -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ENCABEZADO PRINCIPAL (HEADER) -->
+    <header id="encabezado"> <!-- Cabecera del sitio con fondo verde agua -->
+        <h1>Veterinaria San Marcos</h1> <!-- Nombre principal del establecimiento -->
+        <p>Cuidado profesional y amor para tus mascotas</p> <!-- Eslogan de la veterinaria -->
+        <img src="img/logo-veterinaria1.png" alt="Logo Veterinaria San Marcos" class="logo-header"> <!-- Logo -->
+
+        <!-- NAV: MENÚ DE NAVEGACIÓN -->
+        <nav id="menu-principal"> <!-- Envoltorio del menú de navegación -->
+            <ul> <!-- Lista desordenada para las opciones del menú -->
+                <li><a href="index.html">Inicio</a></li> <!-- Redirige al inicio -->
+                <li><a href="productos.html">Productos</a></li> <!-- Redirige al catálogo de productos -->
+                <li><a href="login.html">Ingresar</a></li> <!-- Redirige al login -->
+                <li><a href="registro.html">Registro</a></li> <!-- Permanece en registro -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL (MAIN) -->
+    <main id="contenido"> <!-- Envoltorio del cuerpo de la página -->
+        
+        <!-- SECCIÓN: REGISTRO DE MASCOTAS -->
+        <section id="registro" class="seccion"> <!-- Caja contenedora del formulario -->
+            <h2>Registro de Mascota</h2> <!-- Título de la sección -->
+            <p>Completa el formulario con los datos de tu mascota y la información de contacto. Esto nos ayudará a brindar mejor atención personalizada.</p> <!-- Instrucciones -->
+
+            <!-- FORMULARIO DE REGISTRO -->
+            <form name="registro-mascota" id="registro-mascota" method="POST"> <!-- Formulario de registro -->
+                <fieldset> <!-- Agrupa campos relacionados -->
+                    <legend>Información del Propietario</legend> <!-- Título de la sección del formulario -->
+                    <br>
+                    
+                    <label>Nombre Completo: </label>
+                    <input type="text" required id="nombre" placeholder="Ej: Juan García" name="nombre">
+                    <br><br>
+                    
+                    <label>RUT: </label>
+                    <input type="text" required id="rut" placeholder="Formato: 12345678-9" name="rut">
+                    <br><br>
+                    
+                    <label>Correo Electrónico: </label>
+                    <input type="email" required id="email" placeholder="tu@correo.com" name="email">
+                    <br><br>
+                    
+                    <label>Teléfono de Contacto: </label>
+                    <input type="tel" required id="telefono" placeholder="+56 9 1234 5678" name="telefono">
+                    <br><br>
+                </fieldset>
+
+                <fieldset> <!-- Agrupa datos de la mascota -->
+                    <legend>Información de la Mascota</legend> <!-- Título de los datos del animal -->
+                    <br>
+                    
+                    <label>Nombre de la Mascota: </label>
+                    <input type="text" required id="nombre-mascota" placeholder="Ej: Rocky, Miau, etc." name="nombre-mascota">
+                    <br><br>
+                    
+                    <label>Tipo de Mascota: </label>
+                    <select id="tipo-mascota" required name="tipo-mascota">
+                        <option value="">--SELECCIONE TIPO DE MASCOTA--</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="conejo">Conejo</option>
+                        <option value="hamster">Hámster</option>
+                        <option value="pajaro">Pájaro</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <br><br>
+                    
+                    <label>Raza: </label>
+                    <input type="text" id="raza" placeholder="Ej: Golden Retriever, Persa, etc." name="raza">
+                    <br><br>
+                    
+                    <label>Edad de la Mascota: </label>
+                    <input type="number" id="edad" min="0" max="50" placeholder="En años" name="edad">
+                    <br><br>
+                    
+                    <label>Peso (kg): </label>
+                    <input type="number" id="peso" min="0" step="0.1" placeholder="Ej: 25.5" name="peso">
+                    <br><br>
+
+                    <label>Microchip: </label>
+                    <input type="text" id="microchip" placeholder="Número de microchip (si tiene)" name="microchip">
+                    <br><br>
+                </fieldset>
+
+                <fieldset> <!-- Agrupa información médica -->
+                    <legend>Información Médica y Servicios</legend> <!-- Título de datos médicos -->
+                    <br>
+                    
+                    <label>¿Ha visitado antes Veterinaria San Marcos?</label>
+                    <label><input type="radio" name="visita-anterior" value="si"> Sí</label>
+                    <label><input type="radio" name="visita-anterior" value="no"> No</label>
+                    <br><br>
+                    
+                    <label>Servicios Solicitados: </label>
+                    <label><input type="checkbox" name="servicios" value="consulta"> Consulta General</label>
+                    <label><input type="checkbox" name="servicios" value="vacunacion"> Vacunación</label>
+                    <label><input type="checkbox" name="servicios" value="desparasitante"> Desparasitante</label>
+                    <label><input type="checkbox" name="servicios" value="peluqueria"> Peluquería</label>
+                    <label><input type="checkbox" name="servicios" value="urgencia"> Urgencia</label>
+                    <label><input type="checkbox" name="servicios" value="otro-servicio"> Otro</label>
+                    <br><br>
+                    
+                    <label>Observaciones o Alergias Conocidas: </label>
+                    <textarea id="observaciones" name="observaciones" placeholder="Cuéntanos sobre condiciones especiales, medicamentos actuales, alergias, comportamiento, etc." rows="4"></textarea>
+                    <br><br>
+                </fieldset>
+
+                <!-- BOTONES DE ACCIÓN -->
+                <button type="submit">Registrar Mascota</button>
+                <button type="reset">Limpiar Formulario</button>
+            </form>
+
+            <script src="js/validacion.js"></script>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer id="pie"> <!-- Pie de página con estilo verde oscuro -->
+        <p><small>&copy; 2025 Veterinaria San Marcos - Todos los derechos reservados</small></p> <!-- Derechos reservados -->
+    </footer>
+</body>
+</html>
