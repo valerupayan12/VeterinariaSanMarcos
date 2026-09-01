@@ -88,7 +88,7 @@ h1{
     color: #00ffff;
 }
 
-.entrar-btn{
+.entrar-btn, .registrar-btn {
     background: linear-gradient(90deg, #00ffff,#00ff80);
     border: none;
     padding: 12px 30px;
@@ -101,6 +101,11 @@ h1{
 }
 
 .entrar-btn:hover{
+    background: linear-gradient(90deg, #00ff80,#00ffff);
+    box-shadow: 0.5px 15px #5f9979;
+}
+
+.registrar-btn:hover{
     background: linear-gradient(90deg, #00ff80,#00ffff);
     box-shadow: 0.5px 15px #5f9979;
 }
