@@ -333,3 +333,206 @@ input[type="checkbox"], input[type="radio"] {
     border: 3px solid #6ee7b7;
     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
 }
+
+/* ==========================
+   DETALLE DEL PRODUCTO
+   ========================== */
+
+/* Esta sección controla el diseño de la página de producto individual. */
+.product-detail {
+    padding: 30px; /* Espacio interno para separar el contenido del borde */
+}
+
+/* La estructura del detalle usa dos columnas: imagen a la izquierda y texto a la derecha. */
+.product-layout {
+    display: grid; /* Activa la cuadrícula de CSS */
+    grid-template-columns: 1fr 1.1fr; /* Dos columnas, la segunda es un poco más ancha */
+    gap: 30px; /* Separación entre columnas */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Caja contenedora de la imagen principal del producto. */
+.product-image-box {
+    background: #f0fdf4; /* Fondo suave verde menta */
+    border: 2px solid #a7f3d0; /* Borde del mismo tono de la paleta */
+    border-radius: 16px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Centra la imagen dentro del contenedor */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+    min-height: 420px; /* Altura mínima para mantener tamaño uniforme */
+}
+
+/* Ajusta la imagen principal para que se vea completa sin deformarse. */
+.product-main-image {
+    max-width: 100%; /* No supera el ancho del contenedor */
+    max-height: 420px; /* Limita la altura máxima */
+    object-fit: contain; /* Muestra la imagen completa sin recortarla */
+    display: block; /* Evita espacios extra debajo de la imagen */
+}
+
+/* Contenedor con el texto e información del producto. */
+.product-info {
+    display: flex; /* Organiza los elementos internos en columnas */
+    flex-direction: column; /* Los pone uno debajo del otro */
+    gap: 14px; /* Espacio entre cada bloque */
+}
+
+/* Etiqueta tipo "Más vendido" */
+.product-badge {
+    display: inline-block; /* Ocupa solo el ancho del contenido */
+    width: fit-content; /* Ajusta el ancho al texto */
+    background: #ecfdf5; /* Fondo claro */
+    color: #0f766e; /* Texto verde oscuro */
+    border: 1px solid #6ee7b7; /* Borde ondulado en verde */
+    border-radius: 999px; /* Bordes redondeados */
+    padding: 8px 12px; /* Espacio interno */
+    font-weight: 700; /* Texto grueso */
+    font-size: 12px; /* Tamaño pequeño */
+    text-transform: uppercase; /* Convierte a mayúsculas */
+    letter-spacing: 1px; /* Espacio entre letras */
+}
+
+/* Estilo del nombre del producto principal */
+.product-info h2 {
+    margin: 0; /* Elimina margen por defecto */
+    color: #0f766e; /* Color institucional */
+    font-size: 34px; /* Tamaño grande para destacar */
+}
+
+/* Fila donde va el precio actual y el precio tachado */
+.product-price-row {
+    display: flex; /* Organiza precio y comparación en línea */
+    align-items: center; /* Los centra verticalmente */
+    gap: 12px; /* Separación entre ambos */
+}
+
+/* Precio principal del producto */
+.product-price {
+    font-size: 38px; /* Tamaño grande */
+    font-weight: 800; /* Muy grueso */
+    color: #065f46; /* Verde oscuro */
+}
+
+/* Precio anterior para mostrar oferta o descuento */
+.product-compare {
+    font-size: 18px; /* Un poco más pequeño */
+    color: #64748b; /* Gris azulado */
+    text-decoration: line-through; /* Tacha el precio */
+}
+
+/* Descripción más detallada del producto */
+.product-description {
+    margin: 0; /* Elimina margen */
+    line-height: 1.7; /* Altura de línea cómoda */
+    color: #334155; /* Color gris oscuro */
+    font-size: 16px; /* Tamaño legible */
+}
+
+/* Lista de beneficios / características del producto */
+.product-benefits {
+    margin: 0; /* Elimina margen */
+    padding-left: 20px; /* Añade espacio a la izquierda para las viñetas */
+    color: #1f2937; /* Texto oscuro */
+    line-height: 1.8; /* Espaciado entre líneas */
+}
+
+/* Área para los botones Comprar / Ver más */
+.action-row {
+    display: flex; /* Los pone en línea */
+    gap: 12px; /* Espacio entre ellos */
+    flex-wrap: wrap; /* Si no caben, bajan a otra línea */
+    margin-top: 6px; /* Separación */
+}
+
+/* Estilo común para botones primarios y secundarios */
+.btn-primary,
+.btn-secondary {
+    border: none; /* Quita el borde */
+    border-radius: 12px; /* Bordes suaves */
+    padding: 14px 20px; /* Relleno */
+    font-weight: 700; /* Texto en negrita */
+    cursor: pointer; /* Cursor con mano */
+    transition: all 0.3s ease; /* Suaviza cambios */
+}
+
+/* Botón principal para comprar */
+.btn-primary {
+    background: #10b981; /* Verde principal */
+    color: white; /* Texto en blanco */
+}
+
+/* Botón secundario para ver más */
+.btn-secondary {
+    background: #ecfdf5; /* Fondo claro */
+    color: #0f766e; /* Texto verde oscuro */
+    border: 1px solid #6ee7b7; /* Borde verde */
+}
+
+/* Efecto visual al pasar mouse por los botones */
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px); /* Sube levemente el botón */
+}
+
+/* Caja de métodos de pago */
+.payment-box {
+    border: 1px solid #a7f3d0; /* Borde suave */
+    border-radius: 12px; /* Bordes redondeados */
+    background: #f0fdf4; /* Fondo claro */
+    padding: 16px; /* Espacio interior */
+}
+
+/* Título de la sección de pagos */
+.payment-box h3 {
+    margin: 0 0 10px 0; /* Elimina margen superior */
+    color: #0f766e; /* Verde institucional */
+}
+
+/* Contenedor de las opciones de pago */
+.payment-options {
+    display: flex; /* En línea */
+    flex-wrap: wrap; /* Ajusta si no caben */
+    gap: 10px; /* Separación */
+}
+
+/* Cada opción de método de pago */
+.payment-options span {
+    background: #ffffff; /* Fondo blanco */
+    color: #0f172a; /* Texto oscuro */
+    border: 1px solid #bbf7d0; /* Borde claro */
+    border-radius: 999px; /* Redondeado */
+    padding: 8px 12px; /* Relleno */
+    font-size: 13px; /* Tamaño pequeño */
+    font-weight: 600; /* Medio grueso */
+}
+
+/* Información extra para envío, garantía y stock */
+.extra-info {
+    display: grid; /* Cuadrícula */
+    grid-template-columns: repeat(3, minmax(180px, 1fr)); /* Tres columnas */
+    gap: 16px; /* espacio */
+    margin-top: 24px; /* separa del contenido principal */
+}
+
+/* Tarjetas pequeñas de información adicional */
+.info-card {
+    background: #ffffff; /* Fondo blanco */
+    border: 1px solid #a7f3d0; /* Borde suave */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 18px; /* Espacio interno */
+    box-shadow: 0 3px 10px rgba(16, 185, 129, 0.08); /* Sombra suave */
+}
+
+/* Título de cada tarjeta de información */
+.info-card h3 {
+    margin-top: 0; /* Elimina margen superior */
+    color: #0f766e; /* Verde principal */
+}
+
+/* Texto de cada tarjeta de información */
+.info-card p {
+    margin: 0; /* Elimina margen */
+    line-height: 1.6; /* Altura de línea */
+    color: #475569; /* Gris medio */
+}
