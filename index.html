@@ -25,131 +25,113 @@
             <img src="img/logo-veterinaria1.png" alt="Logo Veterinaria San Marcos" class="logo-header"> <!-- Imagen sin ancho/alto forzados -->
 
             <!-- NAV: MENÚ DE NAVEGACIÓN -->
-            <nav id="menu-principal"> <!-- Envoltorio del menú de navegación -->
-                <ul> <!-- Lista desordenada para las opciones del menú -->
-                    <li><a href="#inicio">Inicio</a></li> <!-- Clic: Desplaza suavemente a la sección bienvenida -->
-                    <li><a href="#album">Destacados</a></li> <!-- Clic: Desplaza a la galería de destacados -->
-                    <li><a href="contacto.html">Contacto</a></li> <!-- Clic: Abre la página externa de contacto -->
-                    <li><a href="index2.html">Servicios y Productos</a></li> <!-- Clic: Abre el catálogo secundario (index2.html) -->
+            <nav id="menu-principal"> <!-- Envoltorio del menú principal -->
+                <ul> <!-- Lista desordenada de opciones del menú -->
+                    <li><a href="#inicio">Inicio</a></li> <!-- Enlace a la sección de bienvenida -->
+                    <li><a href="#album">Destacados</a></li> <!-- Enlace a la sección de servicios y destacados -->
+                    <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+                    <li><a href="#album">Servicios y Productos</a></li> <!-- Enlace directo a la parte de servicios y productos del inicio -->
                 </ul>
             </nav>
         </header>
 
         <!-- CONTENIDO PRINCIPAL (MAIN) -->
-        <main id="contenido"> <!-- Envoltorio del cuerpo de la página -->
+        <main id="contenido"> <!-- Contenedor principal de la página -->
             
             <!-- SECCIÓN 1: INICIO Y PRESENTACIÓN -->
-            <section id="inicio" class="seccion"> <!-- Caja contenedora de la bienvenida -->
-                <h2>Bienvenidos a Veterinaria San Marcos</h2> <!-- Título de bienvenida -->
-                <p>Ofrecemos la mejor atención médica, vacunas y estética para tus mascotas en San Marcos.</p> <!-- Descripción del negocio -->
-                <p>¡Tu tranquilidad y la salud de tu compañero son nuestra prioridad!</p> <!-- Texto secundario inspirador -->
+            <section id="inicio" class="seccion"> <!-- Sección inicial de bienvenida -->
+                <h2>Bienvenidos a Veterinaria San Marcos</h2> <!-- Título principal de bienvenida -->
+                <p>Ofrecemos la mejor atención médica, vacunas y estética para tus mascotas en San Marcos.</p> <!-- Descripción general del negocio -->
+                <p>¡Tu tranquilidad y la salud de tu compañero son nuestra prioridad!</p> <!-- Mensaje motivacional -->
 
                 <!-- CONTENEDOR DEL VIDEO PROMOCIONAL -->
-                <div class="contenedor-video"> <!-- Envoltorio para centrar y dar formato al video -->
-                    <video autoplay muted loop controls poster="img/banner-mascotas.jpg" class="video-promocional"> <!-- Reproductor con autoplay, silenciado y en loop -->
-                        <source src="video/presentacion.mp4" type="video/mp4"> <!-- Ruta de tu archivo de video -->
-                        Tu navegador no soporta la reproducción de video HTML5. <!-- Mensaje por si el navegador es antiguo -->
+                <div class="contenedor-video"> <!-- Contenedor para centrar el video -->
+                    <video autoplay muted loop controls poster="img/banner-mascotas.jpg" class="video-promocional"> <!-- Video con reproducción automática y en bucle -->
+                        <source src="video/presentacion.mp4" type="video/mp4"> <!-- Ruta del archivo de video -->
+                        Tu navegador no soporta la reproducción de video HTML5. <!-- Texto de respaldo si no funciona -->
                     </video>
                 </div>
             </section>
 
             <!-- SECCIÓN 2: ÁLBUM Y GALERÍA DE DESTACADOS -->
-            <section id="album" class="seccion"> <!-- Caja contenedora de lo nuevo y destacado -->
+            <section id="album" class="seccion"> <!-- Sección con servicios y productos destacados -->
                 <h2>¡Revisa Nuestros Servicios Destacados!</h2> <!-- Título de la galería -->
-                <h3>Conoce lo mejor para el bienestar de tu mascota</h3> <!-- Subtítulo de la sección -->
+                <h3>Conoce lo mejor para el bienestar de tu mascota</h3> <!-- Subtítulo informativo -->
 
                 <!-- GALERÍA EN CUADRÍCULA -->
-                <div class="galeria"> <!-- Contenedorde tarjetas -->
+                <div class="galeria"> <!-- Contenedor principal de las tarjetas -->
                     
                     <!-- Tarjeta 1 -->
-                    <article class="tarjeta"> <!-- Caja individual de producto/servicio -->
-                        <div class="espacio-imagen"> <!-- Envoltorio con altura fija para la foto -->
-                            <img src="img/tarjeta-consulta_medica.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Consulta General"> <!-- Foto del servicio -->
+                    <article class="tarjeta"> <!-- Caja individual del primer servicio -->
+                        <div class="espacio-imagen"> <!-- Contenedor fijo para la imagen -->
+                            <img src="img/tarjeta-consulta_medica.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Consulta General"> <!-- Imagen del servicio -->
                         </div>
                         <h3>Consulta Médica General</h3> <!-- Nombre del servicio -->
-                        <p>Evaluación clínica completa para perritos y gatitos.</p> <!-- Descripción breve -->
-                        <a href="consultaMedicoGeneral.html"><button type="button">Ver Detalle</button></a>
+                        <p>Evaluación clínica completa para perritos y gatitos.</p> <!-- Resumen del servicio -->
+                        <a href="consultaMedicoGeneral.html"><button type="button">Ver Detalle</button></a> <!-- Botón para ir al detalle -->
                     </article>
 
                     <!-- Tarjeta 2 -->
-                    <article class="tarjeta">
-                        <div class="espacio-imagen">
-                            <img src="img/tarjeta-vacunacion.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Vacunación">
+                    <article class="tarjeta"> <!-- Caja individual del segundo servicio -->
+                        <div class="espacio-imagen"> <!-- Contenedor para la imagen -->
+                            <img src="img/tarjeta-vacunacion.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Vacunación"> <!-- Imagen de vacunación -->
                         </div>
-                        <h3>Vacunación e Inmunización</h3>
-                        <p>Protección contra parvovirus, rabia y profilaxis completa.</p>
-                        <a href="vacunacion.html"><button type="button">Ver Detalle</button></a>
+                        <h3>Vacunación e Inmunización</h3> <!-- Nombre del servicio -->
+                        <p>Protección contra parvovirus, rabia y profilaxis completa.</p> <!-- Descripción del servicio -->
+                        <a href="vacunacion.html"><button type="button">Ver Detalle</button></a> <!-- Botón para ir al detalle -->
                     </article>
 
                     <!-- Tarjeta 3 -->
-                    <article class="tarjeta">
-                        <div class="espacio-imagen">
-                            <img src="img/tarjeta-peluqueria.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Peluquería">
+                    <article class="tarjeta"> <!-- Caja individual del tercer servicio -->
+                        <div class="espacio-imagen"> <!-- Contenedor para la imagen -->
+                            <img src="img/tarjeta-cirugiaMenor.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Cirugía menor"> <!-- Imagen de cirugía menor -->
                         </div>
-                        <h3>Peluquería Canina y Felina</h3>
-                        <p>Baño medicado, corte de pelo e higiene de oídos y uñas.</p>
+                        <h3>Cirugía Menor</h3> <!-- Nombre del servicio -->
+                        <p>Procedimientos seguros y controlados para esterilización y atención veterinaria menor.</p> <!-- Descripción -->
                     </article>
 
                     <!-- Tarjeta 4 -->
-                    <article class="tarjeta">
-                        <div class="espacio-imagen">
-                            <img src="img/tarjeta-alimento_premiun.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Alimentos">
+                    <article class="tarjeta"> <!-- Caja individual del cuarto servicio -->
+                        <div class="espacio-imagen"> <!-- Contenedor para la imagen -->
+                            <img src="img/tarjeta-controlpeso.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Control de peso"> <!-- Imagen del servicio de control de peso -->
                         </div>
-                        <h3>Alimento Premium</h3>
-                        <p>Nutrición especializada recomendada por médicos veterinarios.</p>
-                        <a href="productos.html"><button type="button">Ver Detalle</button></a>
+                        <h3>Control de Peso</h3> <!-- Nombre del servicio -->
+                        <p>Plan nutricional y seguimiento para mejorar salud, movilidad y calidad de vida.</p> <!-- Descripción del servicio -->
                     </article>
 
                     <!-- Tarjeta 5 -->
-                    <article class="tarjeta">
-                        <div class="espacio-imagen">
-                            <img src="img/tarjeta-urgencias.jpg" alt="Urgencias">
+                    <article class="tarjeta"> <!-- Caja individual del producto -->
+                        <div class="espacio-imagen"> <!-- Contenedor para la imagen -->
+                            <img src="img/tarjeta-alimento_premiun.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Alimentos"> <!-- Imagen del producto -->
                         </div>
-                        <h3>Atención de Urgencias</h3>
-                        <p>Atención prioritaria y estabilización clínica las 24 horas.</p>
+                        <h3>Alimento Premium</h3> <!-- Nombre del producto -->
+                        <p>Nutrición especializada recomendada por médicos veterinarios.</p> <!-- Descripción del producto -->
+                        <a href="productos.html"><button type="button">Ver Detalle</button></a> <!-- Botón para ver catálogo de productos -->
                     </article>
 
                     <!-- Tarjeta 6 -->
-                    <article class="tarjeta">
-                        <div class="espacio-imagen">
-                            <img src="img/tarjeta-accesorio_juguete.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Accesorios">
+                    <article class="tarjeta"> <!-- Caja individual del producto accesoria -->
+                        <div class="espacio-imagen"> <!-- Contenedor para la imagen -->
+                            <img src="img/tarjeta-accesorio_juguete.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Accesorios"> <!-- Imagen de accesorios y juguetes -->
                         </div>
-                        <h3>Accesorios y Juguetes</h3>
-                        <p>Correas, collares y juguetes didácticos para el entretenimiento en casa.</p>
-                        <a href="productos.html"><button type="button">Ver Detalle</button></a>
-                    </article>
-
-                    <!-- Tarjeta 7 -->
-                    <article class="tarjeta">
-                        <div class="espacio-imagen">
-                            <img src="img/tarjeta-cirugia-menor.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Cirugía menor">
-                        </div>
-                        <h3>Cirugía Menor</h3>
-                        <p>Procedimientos seguros y controlados para esterilización y atención veterinaria menor.</p>
-                    </article>
-
-                    <!-- Tarjeta 8 -->
-                    <article class="tarjeta">
-                        <div class="espacio-imagen">
-                            <img src="img/tarjeta-control-peso.jpg" style="height: 100%; width: 100%; object-fit: contain;" alt="Control de peso">
-                        </div>
-                        <h3>Control de Peso</h3>
-                        <p>Plan nutricional y seguimiento para mejorar salud, movilidad y calidad de vida.</p>
+                        <h3>Accesorios y Juguetes</h3> <!-- Nombre del producto -->
+                        <p>Correas, collares y juguetes didácticos para el entretenimiento en casa.</p> <!-- Descripción breve -->
+                        <a href="productos.html"><button type="button">Ver Detalle</button></a> <!-- Botón para ver catálogo de productos -->
                     </article>
 
                 </div> <!-- Fin div.galeria -->
             </section>
 
             <!-- SECCIÓN DE INFORMACIÓN INSTITUCIONAL -->
-            <section class="seccion">
-                <h2>Sobre nuestra clínica</h2>
-                <p>Atendemos principalmente perros y gatos, además de conejos y aves.</p>
-                <p>Ofrecemos consulta general, vacunación, cirugía menor, desparasitación, control de peso, peluquería, urgencias y una variedad de productos para el cuidado de tus mascotas.</p>
+            <section class="seccion"> <!-- Sección adicional con información general de la clínica -->
+                <h2>Sobre nuestra clínica</h2> <!-- Título de la sección -->
+                <p>Atendemos principalmente perros y gatos, además de conejos y aves.</p> <!-- Descripción de mascotas atendidas -->
+                <p>Ofrecemos consulta general, vacunación, cirugía menor, desparasitación, control de peso, peluquería, urgencias y una variedad de productos para el cuidado de tus mascotas.</p> <!-- Resumen de servicios y productos -->
             </section>
         </main>
 
         <!-- PIE DE PÁGINA (FOOTER) -->
-        <footer id="pie"> <!-- Pie de página con estilo verde oscuro -->
+        <footer id="pie"> <!-- Pie de página final del sitio -->
             <p><small>&copy; 2025 Veterinaria San Marcos - Todos los derechos reservados</small></p> <!-- Derechos reservados -->
         </footer>
     </body>
