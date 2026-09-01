@@ -2,7 +2,7 @@
 
 // Usuario administrador estático (solo para pruebas/demo)
 const ADMIN_USER = {
-    email: "admin@vet.cl",
+    email: "admin@duocuc.cl",
     password: "Admin.123"
 };
 
