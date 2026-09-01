@@ -1,15 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header id="encabezado">
-        <h1>Clinica Veterinaria San Marcos</h1>
-        
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> <!-- Define la codificación de caracteres en español -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista para dispositivos móviles -->
+        <title>Veterinaria San Marcos - Inicio</title> <!-- Título visible en la pestaña del navegador -->
+        <link rel="stylesheet" href="css/styles.css"> <!-- Vincula con la hoja de estilos externa -->
+    </head>
+    <body>
+        <!-- BARRA SUPERIOR (TOPBAR) -->
+        <div class="topbar"> <!-- Contenedor de la barra informativa superior -->
+            <div>
+                <div class="woostify-container"> <!-- Alineador interno del contenido -->
+                    <div class="topbar-item topbar-left"></div> <!-- Espacio izquierdo reservado -->
+                    <div class="topbar-item topbar-center">Atención de Urgencias 24/7 en San Marcos</div> <!-- Mensaje central de aviso urgente -->
+                    <div class="topbar-item topbar-right"></div> <!-- Espacio derecho reservado -->
+                </div>
+            </div>
+        </div>
 
-    </header>
-</body>
+       <!-- ENCABEZADO PRINCIPAL (HEADER) -->
+        <header id="encabezado"> <!-- Cabecera del sitio con fondo verde agua -->
+            <h1>Veterinaria San Marcos</h1> <!-- Nombre principal del establecimiento -->
+            <p>Cuidado profesional y amor para tus mascotas</p> <!-- Eslogan de la veterinaria -->
+            <img src="img/logo-veterinaria1.png" alt="Logo Veterinaria San Marcos" class="logo-header"> <!-- Imagen sin ancho/alto forzados -->
+
+            <!-- NAV: MENÚ DE NAVEGACIÓN -->
+            <nav id="menu-principal"> <!-- Envoltorio del menú de navegación -->
+                <ul> <!-- Lista desordenada para las opciones del menú -->
+                    <li><a href="#inicio">Inicio</a></li> <!-- Clic: Desplaza suavemente a la sección bienvenida -->
+                    <li><a href="#album">Destacados</a></li> <!-- Clic: Desplaza a la galería de destacados -->
+                    <li><a href="contacto.html">Contacto</a></li> <!-- Clic: Abre la página externa de contacto -->
+                    <li><a href="index2.html">Servicios y Productos</a></li> <!-- Clic: Abre el catálogo secundario (index2.html) -->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL (MAIN) -->
+        <main id="contenido"> <!-- Envoltorio del cuerpo de la página -->
+            
+            <!-- SECCIÓN 1: INICIO Y PRESENTACIÓN -->
+            <section id="inicio" class="seccion"> <!-- Caja contenedora de la bienvenida -->
+                <h2>Bienvenidos a Veterinaria San Marcos</h2> <!-- Título de bienvenida -->
+                <p>Ofrecemos la mejor atención médica, vacunas y estética para tus mascotas en San Marcos.</p> <!-- Descripción del negocio -->
+                <p>¡Tu tranquilidad y la salud de tu compañero son nuestra prioridad!</p> <!-- Texto secundario inspirador -->
+
+                <!-- CONTENEDOR DEL VIDEO PROMOCIONAL -->
+                <div class="contenedor-video"> <!-- Envoltorio para centrar y dar formato al video -->
+                    <video controls poster="img/banner-mascotas.jpg" class="video-promocional"> <!-- Reproductor con controles y portada opcional -->
+                        <source src="video/presentacion.mp4" type="video/mp4"> <!-- Ruta de tu archivo de video -->
+                        Tu navegador no soporta la reproducción de video HTML5. <!-- Mensaje por si el navegador es antiguo -->
+                    </video>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: ÁLBUM Y GALERÍA DE DESTACADOS -->
+            <section id="album" class="seccion"> <!-- Caja contenedora de lo nuevo y destacado -->
+                <h2>¡Revisa Nuestros Servicios Destacados!</h2> <!-- Título de la galería -->
+                <img src="img/banner-mascotas.jpg" alt="Mascotas San Marcos" class="banner-section"> <!-- Imagen promocional de la sección -->
+                <h3>Conoce lo mejor para el bienestar de tu mascota</h3> <!-- Subtítulo de la sección -->
+
+                <!-- GALERÍA EN CUADRÍCULA -->
+                <div class="galeria"> <!-- Contenedorde tarjetas -->
+                    
+                    <!-- Tarjeta 1 -->
+                    <article class="tarjeta"> <!-- Caja individual de producto/servicio -->
+                        <div class="espacio-imagen"> <!-- Envoltorio con altura fija para la foto -->
+                            <img src="img/tarjeta-consulta_medica.jpg" style="height: 100%; width: 200%; object-fit: cover;" alt="Consulta General"> <!-- Foto del servicio -->
+                        </div>
+                        <h3>Consulta Médica General</h3> <!-- Nombre del servicio -->
+                        <p>Evaluación clínica completa para perritos y gatitos.</p> <!-- Descripción breve -->
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article class="tarjeta">
+                        <div class="espacio-imagen">
+                            <img src="img/tarjeta-vacunacion.jpg" style="height: 100%; width: 200%; object-fit: cover;" alt="Vacunación">
+                        </div>
+                        <h3>Vacunación e Inmunización</h3>
+                        <p>Protección contra parvovirus, rabia y profilaxis completa.</p>
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article class="tarjeta">
+                        <div class="espacio-imagen">
+                            <img src="img/tarjeta-peluqueria.jpg" style="height: 100%; width: 200%; object-fit: cover;" alt="Peluquería">
+                        </div>
+                        <h3>Peluquería Canina y Felina</h3>
+                        <p>Baño medicado, corte de pelo e higiene de oídos y uñas.</p>
+                    </article>
+
+                    <!-- Tarjeta 4 -->
+                    <article class="tarjeta">
+                        <div class="espacio-imagen">
+                            <img src="img/tarjeta-alimento.jpg" style="height: 100%; width: 200%; object-fit: cover;" alt="Alimentos">
+                        </div>
+                        <h3>Alimento Premium</h3>
+                        <p>Nutrición especializada recomendada por médicos veterinarios.</p>
+                    </article>
+
+                    <!-- Tarjeta 5 -->
+                    <article class="tarjeta">
+                        <div class="espacio-imagen">
+                            <img src="img/tarjeta-urgencias.jpg" alt="Urgencias">
+                        </div>
+                        <h3>Atención de Urgencias</h3>
+                        <p>Atención prioritaria y estabilización clínica las 24 horas.</p>
+                    </article>
+
+                    <!-- Tarjeta 6 -->
+                    <article class="tarjeta">
+                        <div class="espacio-imagen">
+                            <img src="img/tarjeta-accesorios.jpg" style="height: 100%; width: 200%; object-fit: cover;" alt="Accesorios">
+                        </div>
+                        <h3>Accesorios y Juguetes</h3>
+                        <p>Correas, collares y juguetes didácticos para el entretenimiento en casa.</p>
+                    </article>
+
+                </div> <!-- Fin div.galeria -->
+            </section>
+        </main>
+
+        <!-- PIE DE PÁGINA (FOOTER) -->
+        <footer id="pie"> <!-- Pie de página con estilo verde oscuro -->
+            <p><small>&copy; 2025 Veterinaria San Marcos - Todos los derechos reservados</small></p> <!-- Derechos reservados -->
+        </footer>
+    </body>
 </html>
