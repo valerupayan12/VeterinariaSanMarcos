@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (emailValue === ADMIN_USER.email && passwordValue === ADMIN_USER.password) {
             sessionStorage.setItem("usuarioLogueado", "admin");
-            window.location.href = "index.html";
+            window.location.href = "admin.html";
         } else {
             alert("Correo o contraseña incorrectos");
         }
