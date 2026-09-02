@@ -30,8 +30,8 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="login.html">Ingresar</a></li>
                     <li><a href="registro.html">Registro</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
@@ -73,7 +73,7 @@
                         <!-- Botones para comprar -->
                         <div class="action-row">
                             <button type="button" class="btn-primary">Comprar ahora</button>
-                            <button type="button" class="btn-secondary" onclick="window.open('permacatvideo.mp4', '_blank')">Ver más</button>
+                            <button type="button" class="btn-secondary" onclick="document.getElementById('videoModal').showModal()">Ver más</button>
                         </div>
 
                         <!-- Métodos de pago disponibles -->
@@ -109,6 +109,16 @@
                 </div>
             </section>
         </main>
+
+        <dialog id="videoModal" class="video-modal">
+            <button type="button" class="cerrar-modal" onclick="document.getElementById('videoModal').close()" aria-label="Cerrar video">
+                X
+            </button>
+            <video controls>
+                <source src="video/permacatvideo.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </dialog>
 
         <!-- Pie de página del sitio -->
         <footer id="pie">
