@@ -475,6 +475,38 @@ input[type="checkbox"], input[type="radio"] {
     transform: translateY(-2px); /* Sube levemente el botón */
 }
 
+/* Ventana emergente modal para reproducir el video del producto en ver mas permacat. */
+.video-modal {
+    width: min(60%, 300px);
+    padding: 20px;
+    border: 2px solid #6ee7b7;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.video-modal::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.video-modal video {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cerrar-modal {
+    display: block;
+    margin: 0 0 12px auto;
+    border: none;
+    background: #ef4444;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* Caja de métodos de pago */
 .payment-box {
     border: 1px solid #a7f3d0; /* Borde suave */
