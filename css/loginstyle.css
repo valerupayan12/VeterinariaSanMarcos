@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f0fdf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../img/fondologin.jpg');
+    background-size: cover;
+}
+
+.form-login{
+    background-color: rgb(52, 57, 73);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.822);
+    width: 320px;
+    text-align: center;
+}
+
+
+h1{
+    color: #369789;
+    margin: 20px 0;
+}
+
+.email-box input{
+    width: 100%;
+    padding: 12px 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 2px solid rgba(36, 170, 170, 0.3);
+}
+
+.email-box input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.password-box input{
+    width: 100%;
+    padding: 12px 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 2px solid rgba(36, 170, 170, 0.3);
+}
+
+.password-box input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.password-box input:focus{
+    border-color: #00ffff;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+}
+
+.email-box input:focus{
+    border-color: #00ffff;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+}
+
+.email-box span{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: rgba(255, 255, 225, 0.5);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.4s;
+    transform: translateY(-50%);
+}
+
+.email-box input:focus ~ span,
+.email-box input:not(:placeholder-shown) + span{
+    top: -5px;  
+    font-size: 12px;
+    color: #00ffff;
+}
+
+.entrar-btn, .registrar-btn {
+    background: linear-gradient(90deg, #00ffff,#00ff80);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: rgb(130, 130, 212);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.entrar-btn:hover{
+    background: linear-gradient(90deg, #00ff80,#00ffff);
+    box-shadow: 0.5px 15px #5f9979;
+}
+
+.registrar-btn:hover{
+    background: linear-gradient(90deg, #00ff80,#00ffff);
+    box-shadow: 0.5px 15px #5f9979;
+}

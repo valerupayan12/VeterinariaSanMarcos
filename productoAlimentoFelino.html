@@ -30,8 +30,8 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="login.html">Ingresar</a></li>
                     <li><a href="registro.html">Registro</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
@@ -107,6 +107,16 @@
                 </div>
             </section>
         </main>
+
+        <dialog id="videoModal" class="video-modal">
+            <button type="button" class="cerrar-modal" onclick="document.getElementById('videoModal').close()" aria-label="Cerrar video">
+                X
+            </button>
+            <video controls>
+                <source src="video/permacatvideo.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </dialog>
 
         <!-- Pie de página del sitio -->
         <footer id="pie">
