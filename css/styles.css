@@ -75,7 +75,7 @@ body::before {
 /* ESTRUCTURA Y NAVEGACIÓN */
 /* REGLA 1: ENCABEZADO (#encabezado) */
 #encabezado {
-    background: linear-gradient(135deg, #10b981, #06b6d4); /* Fondo degradado en Verde Agua y Turquesa brillante */
+    background-color: #00BFA6;                              /* Fondo calipso sólido */
     color: #ffffff;                                          /* Texto en blanco para alto contraste */
     text-align: center;                                      /* Centra títulos, descripciones e imágenes */
     padding: 25px 15px;                                      /* Espaciado interno superior e inferior */
@@ -158,9 +158,8 @@ body::before {
 
 /* REGLA 9: EFECTO INTERACTIVO DE TARJETA (.tarjeta:hover) */
 .tarjeta:hover {
-    transform: translateY(-6px);                         /* Eleva la tarjeta 6 píxeles al pasar el mouse */
-    box-shadow: 0 10px 20px rgba(15, 118, 110, 0.22);     /* Intensifica la sombra inferior */
-    border-color: #2dd4bf;                                /* Cambia el borde a verde agua brillante */
+    box-shadow: 0 3px 10px rgba(16, 185, 129, 0.15);      /* Mantiene la sombra original */
+    border-color: #6ee7b7;                                /* Mantiene el borde original */
 }
 
 /* BOTONES, FORMULARIOS Y DETALLES */
@@ -282,7 +281,7 @@ textarea {
 
 /* REGLA 25: PROPIEDAD 5 (Estilo de cursor (cursor)) */
 .tarjeta:hover {
-    cursor: pointer;                                      /* Cambia el puntero al icono de la mano al pasar la tarjeta */
+    cursor: default;                                      /* Mantiene el cursor normal */
 }
 
 /* REGLA 26: PROPIEDAD 6 (Selección de texto (user-select)) */
