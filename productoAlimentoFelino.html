@@ -72,6 +72,17 @@
                         <!-- Botones para comprar -->
                         <div class="action-row">
                             <button type="button" class="btn-primary">Comprar ahora</button>
+
+                            <!-- Ver más: en HTML details summary I> abre y cierra el video sin usar JS -->
+                            <details class="video-details">
+                                <summary class="btn-secondary">Ver más</summary>
+                                <div class="video-content">
+                                    <video controls>
+                                        <source src="video/permacatvideo.mp4" type="video/mp4">
+                                        Tu navegador no soporta la reproducción de video.
+                                    </video>
+                                </div>
+                            </details>
                         </div>
 
                         <!-- Métodos de pago disponibles -->
@@ -107,17 +118,6 @@
                 </div>
             </section>
         </main>
-
-        <dialog id="videoModal" class="video-modal">
-            <button type="button" class="cerrar-modal" onclick="document.getElementById('videoModal').close()" aria-label="Cerrar video">
-                X
-            </button>
-            <video controls>
-                <source src="video/permacatvideo.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de video.
-            </video>
-        </dialog>
-
         <!-- Pie de página del sitio -->
         <footer id="pie">
             <p><small>&copy; 2025 Veterinaria San Marcos - Todos los derechos reservados</small></p>
